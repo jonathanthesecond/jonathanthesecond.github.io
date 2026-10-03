@@ -1,6 +1,7 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ['./index.html', './impressum.html', './datenschutz.html', './404.html'],
+/* Tailwind-Konfiguration für den CDN-Build – wird von allen Seiten direkt nach
+   https://cdn.tailwindcss.com eingebunden. Inhaltlich identisch mit tailwind.config.js
+   (die Datei ist für einen späteren CLI-Build gedacht) – Änderungen bitte in beiden pflegen. */
+tailwind.config = {
   theme: {
     extend: {
       fontFamily: {
@@ -44,6 +45,5 @@ module.exports = {
         marquee: 'marquee 40s linear infinite'
       }
     }
-  },
-  plugins: []
+  }
 };

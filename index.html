@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>/agile elevation/ – Agile Beratung, Coaching &amp; Ausbildung seit 2015</title>
-<meta name="description" content="Drei erfahrene Agile Coaches, Trainer und Berater begleiten Ihre Organisation persönlich – in der Organisations- und Führungskräfteentwicklung sowie mit Workshops und Trainings. Seit 2015.">
+<meta name="description" content="Drei erfahrene Agile Coaches, Trainer und Berater begleiten Ihre Organisation persönlich: Organisationsentwicklung, Führungskräfteentwicklung, Workshops und Trainings. Gebündelte Senior-Expertise seit 2015.">
 <meta name="author" content="/agile elevation/">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.agile-elevation.de/">
@@ -19,7 +19,7 @@
 <meta property="og:locale" content="de_DE">
 <meta property="og:site_name" content="/agile elevation/">
 <meta property="og:title" content="/agile elevation/ – wir erweitern Ihre Möglichkeiten">
-<meta property="og:description" content="Persönliche agile Beratung von drei erfahrenen Partnern: Organisationsentwicklung, Führungskräfteentwicklung, Workshops und Trainings. Seit 2015.">
+<meta property="og:description" content="Persönliche agile Beratung von drei Senior-Experten: Organisationsentwicklung, Führungskräfteentwicklung, Workshops und Trainings. Seit 2015.">
 <meta property="og:url" content="https://www.agile-elevation.de/">
 <meta property="og:image" content="https://www.agile-elevation.de/AgileElevation_EOS7541.jpg">
 <meta property="og:image:width" content="2560">
@@ -29,7 +29,7 @@
 <!-- Twitter / X -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="/agile elevation/ – wir erweitern Ihre Möglichkeiten">
-<meta name="twitter:description" content="Persönliche agile Beratung von drei erfahrenen Partnern: Organisationsentwicklung, Führungskräfteentwicklung, Workshops und Trainings. Seit 2015.">
+<meta name="twitter:description" content="Persönliche agile Beratung von drei Senior-Experten: Organisationsentwicklung, Führungskräfteentwicklung, Workshops und Trainings. Seit 2015.">
 <meta name="twitter:image" content="https://www.agile-elevation.de/AgileElevation_EOS7541.jpg">
 <meta name="twitter:image:alt" content="/agile elevation/ – Agile Beratung, Coaching und Ausbildung">
 
@@ -41,7 +41,7 @@
        npx tailwindcss -c tailwind.config.js -o tailwind.css --minify
      und danach in allen Seiten die beiden Tailwind-<script>-Tags durch
        <link rel="stylesheet" href="tailwind.css">
-     ersetzen. (content in tailwind.config.js vorher um die Unterseiten ergänzen.) -->
+     ersetzen. -->
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="tailwind-cdn-config.js"></script>
 
@@ -51,7 +51,7 @@
 
 <!-- Schriften, Basis-Styles, Animationen (gemeinsam mit den Unterseiten) -->
 <link rel="stylesheet" href="site.css">
-<link rel="preload" href="fonts/SizmoPro-Bold.otf" as="font" type="font/otf" crossorigin>
+<link rel="preload" href="fonts/SizmoPro.otf" as="font" type="font/otf" crossorigin>
 <link rel="preload" href="AgileElevation_EOS7541-1920.jpg" as="image" imagesrcset="AgileElevation_EOS7541-1280.jpg 1280w, AgileElevation_EOS7541-1920.jpg 1920w, AgileElevation_EOS7541.jpg 2560w" imagesizes="100vw" fetchpriority="high">
 
 <!-- Strukturierte Daten für Suchmaschinen (schema.org)
@@ -171,7 +171,7 @@
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Team- & Agile Coaching", "description": "Begleitung agiler Teams von der Initialisierung über die Produktentwicklung bis zum Abschluss." } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Transformation & Skalierung", "description": "Organisationsentwicklung und Skalierung agiler Arbeitsweisen über die IT hinaus, u. a. mit LeSS." } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Leadership Development", "description": "Coaching und Entwicklung von Führungskräften in agilen Kontexten." } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Training & Ausbildung", "description": "Workshops und Trainings, u. a. Kanban und LEGO® Serious Play®, sowie Coach Reflection Day." } }
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Workshops & Trainings", "description": "Praxisnahe Workshops und Trainings sowie der Coach Reflection Day für Scrum Master und Agile Coaches." } }
     ]
   }
 }
@@ -181,7 +181,7 @@
 <body class="bg-white font-sans text-ink-800 antialiased">
 
 <!-- Skip-Link für Screenreader -->
-<a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:m-3 focus:rounded-lg focus:bg-accent focus:px-4 focus:py-2 focus:font-semibold focus:text-white">Zum Inhalt springen</a>
+<a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:m-3 focus:bg-accent focus:px-4 focus:py-2 focus:font-semibold focus:text-white">Zum Inhalt springen</a>
 
 <!-- =====================================================================
      1. HEADER / NAVIGATION
@@ -189,7 +189,7 @@
 <header x-data="{ open: false, scrolled: false }"
         @scroll.window="scrolled = window.scrollY > 24"
         @keydown.escape.window="open = false"
-        :class="scrolled ? 'bg-white/95 shadow-lg shadow-gray-200/50 backdrop-blur' : 'bg-white/80 backdrop-blur'"
+        :class="scrolled ? 'bg-white shadow-sm' : 'bg-white'"
         class="fixed inset-x-0 top-0 z-50 transition-all duration-300">
 
   <div class="mx-auto flex h-20 max-w-8xl items-center justify-between px-5 sm:px-8 lg:px-12">
@@ -202,13 +202,13 @@
 
     <!-- Desktop-Navigation -->
    <nav class="hidden items-center gap-9 lg:flex" aria-label="Hauptnavigation">
-     <a href="#team" data-spy="team" class="nav-link relative text-sm font-semibold text-slate-800 transition hover:text-teal-600 after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-0 after:bg-teal-600 after:transition-all after:duration-300 hover:after:w-full">Team</a>
-     <a href="#leistungen" data-spy="leistungen" class="nav-link relative text-sm font-semibold text-slate-800 transition hover:text-teal-600 after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-0 after:bg-teal-600 after:transition-all after:duration-300 hover:after:w-full">Leistungen</a>
-     <a href="#impulse" data-spy="impulse" class="nav-link relative text-sm font-semibold text-slate-800 transition hover:text-teal-600 after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-0 after:bg-teal-600 after:transition-all after:duration-300 hover:after:w-full">Impulse</a>
-     <a href="#kontakt" data-spy="kontakt" class="nav-link relative text-sm font-semibold text-slate-800 transition hover:text-teal-600 after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-0 after:bg-teal-600 after:transition-all after:duration-300 hover:after:w-full">Kontakt</a>
+     <a href="#team" data-spy="team" class="nav-link text-[15px] font-normal uppercase tracking-wide text-black/55 transition hover:text-black">Team</a>
+     <a href="#leistungen" data-spy="leistungen" class="nav-link text-[15px] font-normal uppercase tracking-wide text-black/55 transition hover:text-black">Leistungen</a>
+     <a href="#impulse" data-spy="impulse" class="nav-link text-[15px] font-normal uppercase tracking-wide text-black/55 transition hover:text-black">Impulse</a>
+     <a href="#kontakt" data-spy="kontakt" class="nav-link text-[15px] font-normal uppercase tracking-wide text-black/55 transition hover:text-black">Kontakt</a>
 
      <a href="#kontakt"
-     class="ml-2 inline-flex items-center gap-2 rounded-full bg-teal-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-teal-600/25 transition duration-300 hover:-translate-y-0.5 hover:bg-teal-700 hover:shadow-xl hover:shadow-teal-600/35">
+     class="ml-2 inline-flex items-center gap-2 border border-ink-900 px-5 py-2.5 text-[15px] font-normal uppercase tracking-wide text-ink-900 transition duration-300 hover:bg-ink-900 hover:text-white">
     Erstgespräch anfragen
     <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5-5 5M6 12h12"/></svg>
   </a>
@@ -219,7 +219,7 @@
     <button @click="open = !open"
             :aria-expanded="open"
             aria-controls="mobile-menu"
-            class="inline-flex h-11 w-11 items-center justify-center rounded-lg text-ink-800 transition hover:bg-ink-100 hover:text-accent lg:hidden">
+            class="inline-flex h-11 w-11 items-center justify-center text-ink-800 transition hover:bg-ink-100 lg:hidden">
       <span class="sr-only" x-text="open ? 'Menü schließen' : 'Menü öffnen'">Menü öffnen</span>
       <svg x-show="!open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
       <svg x-show="open" x-cloak class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></svg>
@@ -228,14 +228,14 @@
 
  <!-- Mobile-Navigation -->
 <div id="mobile-menu" x-show="open" x-cloak x-transition.origin.top
-     class="border-t border-gray-200 bg-white lg:hidden">
+     class="border-t border-ink-200 bg-white lg:hidden">
   <nav class="mx-auto max-w-8xl space-y-1 px-5 py-6 sm:px-8" aria-label="Mobile Navigation">
-    <a @click="open=false" href="#team" data-spy="team" class="block rounded-lg px-3 py-3 text-base font-semibold text-slate-800 transition hover:bg-slate-100 hover:text-teal-700">Team</a>
-    <a @click="open=false" href="#leistungen" data-spy="leistungen" class="block rounded-lg px-3 py-3 text-base font-semibold text-slate-800 transition hover:bg-slate-100 hover:text-teal-700">Leistungen</a>
-    <a @click="open=false" href="#impulse" data-spy="impulse" class="block rounded-lg px-3 py-3 text-base font-semibold text-slate-800 transition hover:bg-slate-100 hover:text-teal-700">Impulse &amp; Downloads</a>
-    <a @click="open=false" href="#kontakt" data-spy="kontakt" class="block rounded-lg px-3 py-3 text-base font-semibold text-slate-800 transition hover:bg-slate-100 hover:text-teal-700">Kontakt</a>
+    <a @click="open=false" href="#team" data-spy="team" class="block px-3 py-3 text-base font-normal uppercase tracking-wide text-black/60 transition hover:bg-ink-100 hover:text-black">Team</a>
+    <a @click="open=false" href="#leistungen" data-spy="leistungen" class="block px-3 py-3 text-base font-normal uppercase tracking-wide text-black/60 transition hover:bg-ink-100 hover:text-black">Leistungen</a>
+    <a @click="open=false" href="#impulse" data-spy="impulse" class="block px-3 py-3 text-base font-normal uppercase tracking-wide text-black/60 transition hover:bg-ink-100 hover:text-black">Impulse &amp; Downloads</a>
+    <a @click="open=false" href="#kontakt" data-spy="kontakt" class="block px-3 py-3 text-base font-normal uppercase tracking-wide text-black/60 transition hover:bg-ink-100 hover:text-black">Kontakt</a>
     <a @click="open=false" href="#kontakt"
-       class="mt-4 flex items-center justify-center gap-2 rounded-full bg-accent px-6 py-3.5 text-base font-semibold text-white shadow-lg shadow-accent/25 transition hover:bg-accent-600">
+       class="mt-4 flex items-center justify-center gap-2 bg-ink-900 px-6 py-3.5 text-base font-normal uppercase tracking-wide text-white transition hover:bg-black">
       Erstgespräch anfragen
       <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5-5 5M6 12h12"/></svg>
     </a>
@@ -248,91 +248,65 @@
 <!-- =====================================================================
      2. HERO
      ===================================================================== -->
-<section id="hero" class="relative overflow-hidden bg-ink-900 pt-28 pb-12 sm:pt-36 sm:pb-16 lg:pt-36 lg:pb-20">
+<section id="hero" class="relative overflow-hidden bg-white pt-36 pb-20 sm:pt-44 sm:pb-28 lg:pt-48 lg:pb-32">
 
-  <!-- Hintergrundbild Startseite -->
+  <!-- Hintergrundbild Startseite – wie auf der bisherigen Website hell überlagert -->
   <div class="absolute inset-0" aria-hidden="true">
     <img src="AgileElevation_EOS7541-1920.jpg"
          srcset="AgileElevation_EOS7541-1280.jpg 1280w, AgileElevation_EOS7541-1920.jpg 1920w, AgileElevation_EOS7541.jpg 2560w"
          sizes="100vw" alt="" width="2560" height="1707"
          class="h-full w-full object-cover" loading="eager" decoding="async" fetchpriority="high">
-    <div class="absolute inset-0 bg-ink-950/70"></div>
-    <div class="absolute inset-0 bg-gradient-to-b from-ink-950/50 via-ink-900/30 to-ink-950/70"></div>
+    <div class="absolute inset-0 bg-white/80"></div>
   </div>
 
-  <!-- Dekorativer Hintergrund (kein Video – rein CSS, damit die Seite sofort lädt) -->
-  <div class="pointer-events-none absolute inset-0 grid-pattern opacity-70" aria-hidden="true"></div>
-  <div class="pointer-events-none absolute -left-40 -top-40 h-[34rem] w-[34rem] rounded-full bg-accent/20 blur-3xl" aria-hidden="true"></div>
-  <div class="pointer-events-none absolute -right-32 top-1/3 h-[28rem] w-[28rem] rounded-full bg-ink-600/40 blur-3xl" aria-hidden="true"></div>
-  <div class="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-ink-950/60 to-transparent" aria-hidden="true"></div>
+  <div class="relative mx-auto max-w-5xl px-5 text-center sm:px-8 lg:px-12">
 
-  <div class="relative mx-auto grid max-w-8xl items-center gap-16 px-5 sm:px-8 lg:grid-cols-12 lg:gap-12 lg:px-12">
+    <h1 class="reveal">
+      <span class="oblique-line !text-3xl !font-medium sm:!text-5xl lg:whitespace-nowrap">wir erweitern Ihre möglichkeiten</span>
+    </h1>
 
-    <!-- Text -->
-    <div class="lg:col-span-7">
+    <p class="reveal mx-auto mt-12 max-w-3xl text-lg leading-relaxed text-ink-900 sm:text-xl">
+      Wir sind ein Team aus hochgradig erfahrenen Experten. Auf Ihrem Projekt arbeiten genau
+      die drei Senior-Partner, die Sie hier sehen – mit über 25 Jahren gebündelter Erfahrung
+      in IT, Führung und agiler Organisationsentwicklung.
+    </p>
+    <p class="reveal mx-auto mt-4 max-w-3xl text-lg leading-relaxed text-ink-600">
+      Wir stellen Ihnen die passenden Räder, mit denen Sie sicher durchs Gelände fahren –
+      individuell zugeschnitten auf Ihre Organisation und Ihre Ziele.
+    </p>
 
-      <h1 class="reveal mt-0 text-4xl font-extrabold leading-[1.08] tracking-tight text-white sm:text-5xl lg:text-6xl xl:text-[4.1rem]">
-        Wir erweitern Ihre Möglichkeiten.
-      </h1>
-
-      <p class="reveal mt-9 max-w-2xl text-lg leading-relaxed text-ink-300 sm:text-xl">
-        Sie arbeiten direkt mit den drei Partnern, die Sie hier sehen. Wir bringen
-        über 25 Jahre Erfahrung aus IT, Führung und agiler Organisationsentwicklung mit –
-        und begleiten jedes Projekt selbst.
-      </p>
-      <p class="reveal mt-4 max-w-2xl text-lg leading-relaxed text-ink-400">
-        Wir geben Ihnen die passenden Räder, damit Sie sicher durchs Gelände kommen –
-        abgestimmt auf Ihre Organisation und Ihre Ziele.
-      </p>
-
-      <!-- CTAs -->
-      <div class="reveal mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
-        <a href="#team"
-           class="group inline-flex items-center justify-center gap-2.5 rounded-full bg-accent px-8 py-4 text-base font-semibold text-white shadow-xl shadow-accent/25 transition duration-300 hover:-translate-y-0.5 hover:bg-accent-600">
-          Team &amp; Kompetenzen kennenlernen
-          <svg class="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5-5 5M6 12h12"/></svg>
-        </a>
-        <a href="#kontakt"
-           class="inline-flex items-center justify-center gap-2.5 rounded-full border border-white/25 px-8 py-4 text-base font-semibold text-white transition duration-300 hover:border-white/60 hover:bg-white/5">
-          <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3M4 11h16M5 21h14a1 1 0 001-1V7a1 1 0 00-1-1H5a1 1 0 00-1 1v13a1 1 0 001 1z"/></svg>
-          Termin vereinbaren
-        </a>
-      </div>
-
-      <!-- Kennzahlen -->
-      <dl class="reveal mt-8 grid max-w-2xl grid-cols-3 gap-x-6 gap-y-6 border-t border-white/10 pt-6">
-        <div class="flex flex-col-reverse">
-          <dt class="mt-1 text-xs font-medium uppercase tracking-wider text-ink-400">gegründet</dt>
-          <dd class="text-3xl font-extrabold text-white">2015</dd>
-        </div>
-        <div class="flex flex-col-reverse">
-          <dt class="mt-1 text-xs font-medium uppercase tracking-wider text-ink-400">Senior-Partner</dt>
-          <dd class="text-3xl font-extrabold text-white">3</dd>
-        </div>
-        <div class="flex flex-col-reverse">
-          <dt class="mt-1 text-xs font-medium uppercase tracking-wider text-ink-400">Jahre Erfahrung</dt>
-          <dd class="text-3xl font-extrabold text-white">25<span class="text-accent">+</span></dd>
-        </div>
-      </dl>
+    <!-- CTAs -->
+    <div class="reveal mt-10 flex flex-col justify-center gap-4 sm:flex-row sm:items-center">
+      <a href="#team"
+         class="group inline-flex items-center justify-center gap-2.5 bg-ink-900 px-8 py-4 text-base font-normal uppercase tracking-wide text-white transition duration-300 hover:bg-black">
+        Team &amp; Kompetenzen kennenlernen
+        <svg class="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5-5 5M6 12h12"/></svg>
+      </a>
+      <a href="#kontakt"
+         class="inline-flex items-center justify-center gap-2.5 border border-ink-900 bg-white/60 px-8 py-4 text-base font-normal uppercase tracking-wide text-ink-900 transition duration-300 hover:bg-ink-900 hover:text-white">
+        Termin vereinbaren
+      </a>
     </div>
 
-    <!-- Visuelles Element: gestapelte Karten statt Video -->
-    <div class="reveal lg:col-span-5">
-      <div class="relative mx-auto max-w-md lg:max-w-none lg:-mt-40">
-
-        <div class="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-accent/25 via-transparent to-ink-600/30 blur-2xl" aria-hidden="true"></div>
-
-        <div class="relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-2 shadow-2xl backdrop-blur">
-          <img
-            src="AgileElevation_EOS7494-1200.jpg"
-            srcset="AgileElevation_EOS7494-800.jpg 800w, AgileElevation_EOS7494-1200.jpg 1200w"
-            sizes="(min-width: 1024px) 40vw, (min-width: 640px) 448px, 100vw"
-            alt="Workshop-Situation: Ein Trainer erklärt am Flipchart die „Scrum-Geschichte“, zwei Teilnehmer hören zu"
-            loading="eager" decoding="async" width="1200" height="800"
-            class="aspect-[16/10] w-full rounded-2xl object-cover">
-        </div>
+    <!-- Kennzahlen (dt steht im Code vor dd, wird per flex-col-reverse aber darunter angezeigt) -->
+    <dl class="reveal mx-auto mt-14 grid max-w-3xl grid-cols-2 gap-x-6 gap-y-8 border-t border-ink-900/20 pt-8 sm:grid-cols-4">
+      <div class="flex flex-col-reverse">
+        <dt class="mt-1 text-xs uppercase tracking-wider text-ink-600">gegründet</dt>
+        <dd class="text-4xl font-normal text-ink-900">2015</dd>
       </div>
-    </div>
+      <div class="flex flex-col-reverse">
+        <dt class="mt-1 text-xs uppercase tracking-wider text-ink-600">Senior-Partner</dt>
+        <dd class="text-4xl font-normal text-ink-900">3</dd>
+      </div>
+      <div class="flex flex-col-reverse">
+        <dt class="mt-1 text-xs uppercase tracking-wider text-ink-600">Jahre Erfahrung</dt>
+        <dd class="text-4xl font-normal text-ink-900">25+</dd>
+      </div>
+      <div class="flex flex-col-reverse">
+        <dt class="mt-1 text-xs uppercase tracking-wider text-ink-600">Senior-Expertise</dt>
+        <dd class="text-4xl font-normal text-ink-900">100&nbsp;%</dd>
+      </div>
+    </dl>
   </div>
 </section>
 
@@ -343,13 +317,13 @@
   <div class="mx-auto max-w-8xl px-5 sm:px-8 lg:px-12">
 
     <div class="reveal mx-auto max-w-3xl text-center">
-      <p class="text-sm font-semibold uppercase tracking-[0.18em] text-accent">Team</p>
-      <h2 class="mt-4 text-3xl font-extrabold tracking-tight text-ink-900 sm:text-4xl lg:text-5xl">
-        Drei Partner – persönlich<br>an Ihrer Seite.
+      <p><span class="oblique-line">Team</span></p>
+      <h2 class="mt-4 text-3xl font-normal tracking-tight text-ink-900 sm:text-4xl lg:text-5xl">
+        Sie arbeiten mit uns dreien.<br>Persönlich und auf Augenhöhe.
       </h2>
       <p class="mt-6 text-lg leading-relaxed text-ink-600">
-        Bevor wir beraten haben, haben wir selbst jahrzehntelang Software entwickelt, Teams
-        geführt und Unternehmen aufgebaut. Ihren Alltag kennen wir deshalb aus eigener Erfahrung.
+        Jeder von uns hat vor der Beratung jahrzehntelang selbst entwickelt, geführt und
+        Unternehmen aufgebaut. Wir kommen persönlich – und wir bleiben persönlich.
       </p>
     </div>
 
@@ -357,7 +331,7 @@
     <div class="mt-12 grid gap-10 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
 
       <!-- Björn Andersson -->
-      <article class="reveal group flex flex-col overflow-hidden rounded-3xl border border-ink-200 bg-white transition duration-300 hover:-translate-y-1.5 hover:border-ink-300 hover:shadow-2xl hover:shadow-ink-900/10">
+      <article class="reveal group flex flex-col overflow-hidden border border-ink-200 bg-white transition duration-300 hover:border-ink-300">
         <div class="relative overflow-hidden">
           <!-- PLATZHALTER-PORTRÄT: vor dem Livegang durch das echte Foto von Björn Andersson ersetzen (quadratisch, min. 800x800px) -->
           <img
@@ -369,12 +343,13 @@
         </div>
 
         <div class="flex flex-1 flex-col p-7">
-          <h3 class="text-xl font-bold text-ink-900">Björn Andersson</h3>
+          <h3 class="text-xl font-medium text-ink-900">Björn Andersson</h3>
           <p class="mt-1 text-sm font-semibold text-accent">Agile Organisationsentwicklung &amp; Certified Scrum Trainer</p>
 
           <p class="mt-5 text-[15px] leading-relaxed text-ink-600">
             Seit dem Jahr 2000 in der IT: erst Softwareentwickler, dann Architekt, dann Scrum Master.
-            Er hat Startups begleitet, selbst gegründet und verkauft – und weiß deshalb, wie sich Veränderung für die Geschäftsführung anfühlt und wie für das Team.
+            Er hat Startups begleitet, selbst gegründet und verkauft – und weiß deshalb, wie sich
+            Veränderung aus Sicht der Geschäftsführung und aus Sicht des Teams anfühlt.
           </p>
 
           <blockquote class="mt-6 border-l-2 border-accent/60 pl-4 text-[15px] italic leading-relaxed text-ink-700">
@@ -382,9 +357,9 @@
           </blockquote>
 
           <ul class="mt-6 flex flex-wrap gap-2">
-            <li class="rounded-full bg-ink-100 px-3 py-1.5 text-xs font-medium text-ink-700">Certified Scrum Trainer</li>
-            <li class="rounded-full bg-ink-100 px-3 py-1.5 text-xs font-medium text-ink-700">Organisationsentwicklung</li>
-            <li class="rounded-full bg-ink-100 px-3 py-1.5 text-xs font-medium text-ink-700">Startup-Skalierung</li>
+            <li class="bg-ink-100 px-3 py-1.5 text-xs font-medium text-ink-700">Certified Scrum Trainer</li>
+            <li class="bg-ink-100 px-3 py-1.5 text-xs font-medium text-ink-700">Organisationsentwicklung</li>
+            <li class="bg-ink-100 px-3 py-1.5 text-xs font-medium text-ink-700">Startup-Skalierung</li>
           </ul>
 
           <div class="mt-7 flex items-center gap-4 border-t border-ink-100 pt-5">
@@ -394,7 +369,9 @@
               <svg class="h-[18px] w-[18px]" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 110-4.14 2.07 2.07 0 010 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
               LinkedIn
             </a>
-            <a href="#kontakt" class="inline-flex items-center gap-1.5 text-sm font-semibold text-ink-600 transition hover:text-accent">
+            <a href="https://de.linkedin.com/in/bjornradon" target="_blank" rel="noopener noreferrer"
+               aria-label="Björn Andersson auf LinkedIn anfragen (öffnet in neuem Tab)"
+               class="inline-flex items-center gap-1.5 text-sm font-semibold text-ink-600 transition hover:text-accent">
               Anfragen
               <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5-5 5M6 12h12"/></svg>
             </a>
@@ -403,7 +380,7 @@
       </article>
 
       <!-- Fabian Schiller -->
-      <article class="reveal group flex flex-col overflow-hidden rounded-3xl border border-ink-200 bg-white transition duration-300 hover:-translate-y-1.5 hover:border-ink-300 hover:shadow-2xl hover:shadow-ink-900/10">
+      <article class="reveal group flex flex-col overflow-hidden border border-ink-200 bg-white transition duration-300 hover:border-ink-300">
         <div class="relative overflow-hidden">
           <!-- PLATZHALTER-PORTRÄT: vor dem Livegang durch das echte Foto von Fabian Schiller ersetzen (quadratisch, min. 800x800px) -->
           <img
@@ -415,7 +392,7 @@
         </div>
 
         <div class="flex flex-1 flex-col p-7">
-          <h3 class="text-xl font-bold text-ink-900">Fabian Schiller</h3>
+          <h3 class="text-xl font-medium text-ink-900">Fabian Schiller</h3>
           <p class="mt-1 text-sm font-semibold text-accent">Agile Coach, Trainer &amp; Systemischer Business Coach</p>
 
           <p class="mt-5 text-[15px] leading-relaxed text-ink-600">
@@ -429,10 +406,10 @@
           </blockquote>
 
           <ul class="mt-6 flex flex-wrap gap-2">
-            <li class="rounded-full bg-ink-100 px-3 py-1.5 text-xs font-medium text-ink-700">Certified Scrum Professional</li>
-            <li class="rounded-full bg-ink-100 px-3 py-1.5 text-xs font-medium text-ink-700">Certified LeSS Practitioner</li>
-            <li class="rounded-full bg-ink-100 px-3 py-1.5 text-xs font-medium text-ink-700">Systemischer Business Coach</li>
-            <li class="rounded-full bg-ink-100 px-3 py-1.5 text-xs font-medium text-ink-700">LEGO® Serious Play®</li>
+            <li class="bg-ink-100 px-3 py-1.5 text-xs font-medium text-ink-700">Certified Scrum Professional</li>
+            <li class="bg-ink-100 px-3 py-1.5 text-xs font-medium text-ink-700">Certified LeSS Practitioner</li>
+            <li class="bg-ink-100 px-3 py-1.5 text-xs font-medium text-ink-700">Systemischer Business Coach</li>
+            <li class="bg-ink-100 px-3 py-1.5 text-xs font-medium text-ink-700">LEGO® Serious Play®</li>
           </ul>
 
           <div class="mt-7 flex items-center gap-4 border-t border-ink-100 pt-5">
@@ -442,7 +419,9 @@
               <svg class="h-[18px] w-[18px]" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 110-4.14 2.07 2.07 0 010 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
               LinkedIn
             </a>
-            <a href="#kontakt" class="inline-flex items-center gap-1.5 text-sm font-semibold text-ink-600 transition hover:text-accent">
+            <a href="https://de.linkedin.com/in/fabianschiller" target="_blank" rel="noopener noreferrer"
+               aria-label="Fabian Schiller auf LinkedIn anfragen (öffnet in neuem Tab)"
+               class="inline-flex items-center gap-1.5 text-sm font-semibold text-ink-600 transition hover:text-accent">
               Anfragen
               <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5-5 5M6 12h12"/></svg>
             </a>
@@ -451,7 +430,7 @@
       </article>
 
       <!-- Martin Heider -->
-      <article class="reveal group flex flex-col overflow-hidden rounded-3xl border border-ink-200 bg-white transition duration-300 hover:-translate-y-1.5 hover:border-ink-300 hover:shadow-2xl hover:shadow-ink-900/10 md:col-span-2 md:mx-auto md:max-w-md lg:col-span-1 lg:mx-0 lg:max-w-none">
+      <article class="reveal group flex flex-col overflow-hidden border border-ink-200 bg-white transition duration-300 hover:border-ink-300 md:col-span-2 md:mx-auto md:max-w-md lg:col-span-1 lg:mx-0 lg:max-w-none">
         <div class="relative overflow-hidden">
           <!-- PLATZHALTER-PORTRÄT: vor dem Livegang durch das echte Foto von Martin Heider ersetzen (quadratisch, min. 800x800px) -->
           <img
@@ -463,7 +442,7 @@
         </div>
 
         <div class="flex flex-1 flex-col p-7">
-          <h3 class="text-xl font-bold text-ink-900">Martin Heider</h3>
+          <h3 class="text-xl font-medium text-ink-900">Martin Heider</h3>
           <p class="mt-1 text-sm font-semibold text-accent">Leadership, Teamentwicklung &amp; Co-Autor „Scrum Master Kompagnon“</p>
 
           <p class="mt-5 text-[15px] leading-relaxed text-ink-600">
@@ -477,10 +456,10 @@
           </blockquote>
 
           <ul class="mt-6 flex flex-wrap gap-2">
-            <li class="rounded-full bg-ink-100 px-3 py-1.5 text-xs font-medium text-ink-700">HBDI-Trainer</li>
-            <li class="rounded-full bg-ink-100 px-3 py-1.5 text-xs font-medium text-ink-700">CSM / CSPO / CSP</li>
-            <li class="rounded-full bg-ink-100 px-3 py-1.5 text-xs font-medium text-ink-700">Coactive Coach</li>
-            <li class="rounded-full bg-ink-100 px-3 py-1.5 text-xs font-medium text-ink-700">LEGO® Strategic Play®</li>
+            <li class="bg-ink-100 px-3 py-1.5 text-xs font-medium text-ink-700">HBDI-Trainer</li>
+            <li class="bg-ink-100 px-3 py-1.5 text-xs font-medium text-ink-700">CSM / CSPO / CSP</li>
+            <li class="bg-ink-100 px-3 py-1.5 text-xs font-medium text-ink-700">Coactive Coach</li>
+            <li class="bg-ink-100 px-3 py-1.5 text-xs font-medium text-ink-700">LEGO® Strategic Play®</li>
           </ul>
 
           <div class="mt-7 flex items-center gap-4 border-t border-ink-100 pt-5">
@@ -490,7 +469,9 @@
               <svg class="h-[18px] w-[18px]" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 110-4.14 2.07 2.07 0 010 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
               LinkedIn
             </a>
-            <a href="#kontakt" class="inline-flex items-center gap-1.5 text-sm font-semibold text-ink-600 transition hover:text-accent">
+            <a href="https://de.linkedin.com/in/martin-heider-1286a8" target="_blank" rel="noopener noreferrer"
+               aria-label="Martin Heider auf LinkedIn anfragen (öffnet in neuem Tab)"
+               class="inline-flex items-center gap-1.5 text-sm font-semibold text-ink-600 transition hover:text-accent">
               Anfragen
               <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5-5 5M6 12h12"/></svg>
             </a>
@@ -504,32 +485,28 @@
 <!-- =====================================================================
      4. PARTNER & REFERENZEN – zwischen Team und Leistungen
      ===================================================================== -->
-<!-- ÄNDERUNG 2 (Social Proof): Überschrift deutlich größer (text-4xl bis lg:text-6xl), Akzent-Unterstreichung, größere Logos (h-14) -->
-<section id="referenzen" aria-label="Referenzen" class="border-y border-ink-200 bg-ink-50 py-16 sm:py-24">
+<section id="referenzen" aria-labelledby="referenzen-title" class="bg-black py-16 sm:py-24">
   <div class="mx-auto max-w-8xl px-5 sm:px-8 lg:px-12">
+    <div class="reveal flex flex-col items-center text-center">
 
-    <div class="reveal mx-auto max-w-4xl text-center">
-      <p class="text-sm font-semibold uppercase tracking-[0.18em] text-accent">Referenzen</p>
-      <h2 class="mt-4 text-4xl font-extrabold leading-[1.1] tracking-tight text-ink-900 sm:text-5xl lg:text-6xl">
-        Vertraut von
-        <span class="relative inline-block text-accent">
-          führenden
-          <svg class="absolute -bottom-2 left-0 h-3 w-full text-accent/40" viewBox="0 0 300 12" preserveAspectRatio="none" fill="none" aria-hidden="true">
-            <path d="M2 9C60 3 120 2 180 5c40 2 80 4 118 2" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
-          </svg>
-        </span>
-        Unternehmen
+      <p><span class="oblique-line oblique-line-light">Referenzen</span></p>
+
+      <h2 id="referenzen-title" class="mt-8 max-w-3xl text-3xl font-normal tracking-tight text-white sm:text-4xl lg:text-5xl">
+        Vertraut von <strong class="font-medium">führenden Unternehmen</strong> und ihren Führungskräften
       </h2>
+
+      <div class="mt-8 h-px w-24 bg-white/40" aria-hidden="true"></div>
+
+      <ul class="mt-12 grid w-full grid-cols-2 items-center gap-x-8 gap-y-10 sm:grid-cols-3 lg:grid-cols-6">
+        <li class="flex justify-center"><img src="rheinland-sw-300x150.59e221d5.png" alt="Rheinland" loading="lazy" decoding="async" width="300" height="150" class="h-16 w-auto max-w-[200px] object-contain opacity-80 transition hover:opacity-100 sm:h-20"></li>
+        <li class="flex justify-center"><img src="iba-ag-sw-300x150.7c8401e5.png" alt="IBA" loading="lazy" decoding="async" width="300" height="150" class="h-16 w-auto max-w-[200px] object-contain opacity-80 transition hover:opacity-100 sm:h-20"></li>
+        <li class="flex justify-center"><img src="dasscrumteam-sw-300x150.36924cda.png" alt="Das Scrum Team" loading="lazy" decoding="async" width="300" height="150" class="h-16 w-auto max-w-[200px] object-contain opacity-80 transition hover:opacity-100 sm:h-20"></li>
+        <li class="flex justify-center"><img src="cleargroup-sw-300x150.527a7871.png" alt="Cleargroup" loading="lazy" decoding="async" width="300" height="150" class="h-16 w-auto max-w-[200px] object-contain opacity-80 transition hover:opacity-100 sm:h-20"></li>
+        <li class="flex justify-center"><img src="diva-e.png" alt="diva-e" loading="lazy" decoding="async" width="760" height="318" class="brightness-0 invert h-16 w-auto max-w-[200px] object-contain opacity-80 transition hover:opacity-100 sm:h-20"></li>
+        <li class="flex justify-center"><img src="schwaebisch-hall_1000x500-300x150.08d4e749.png" alt="Schwäbisch Hall" loading="lazy" decoding="async" width="300" height="150" class="h-16 w-auto max-w-[200px] object-contain opacity-80 transition hover:opacity-100 sm:h-20"></li>
+      </ul>
     </div>
 
-    <ul class="reveal no-scrollbar mt-12 flex w-full flex-wrap items-center justify-center gap-x-12 gap-y-8">
-        <li class="shrink-0"><img src="rheinland-sw-300x150.59e221d5.png" alt="Rheinland" loading="lazy" decoding="async" width="300" height="150" class="h-14 w-auto max-w-[190px] object-contain opacity-90 transition hover:opacity-100"></li>
-        <li class="shrink-0"><img src="iba-ag-sw-300x150.7c8401e5.png" alt="IBA" loading="lazy" decoding="async" width="300" height="150" class="h-14 w-auto max-w-[190px] object-contain opacity-90 transition hover:opacity-100"></li>
-        <li class="shrink-0"><img src="dasscrumteam-sw-300x150.36924cda.png" alt="Das Scrum Team" loading="lazy" decoding="async" width="300" height="150" class="h-14 w-auto max-w-[190px] object-contain opacity-90 transition hover:opacity-100"></li>
-        <li class="shrink-0"><img src="cleargroup-sw-300x150.527a7871.png" alt="Cleargroup" loading="lazy" decoding="async" width="300" height="150" class="h-14 w-auto max-w-[190px] object-contain opacity-90 transition hover:opacity-100"></li>
-        <li class="shrink-0"><img src="diva-e.png" alt="diva-e" loading="lazy" decoding="async" width="760" height="318" class="h-14 w-auto max-w-[190px] object-contain opacity-90 transition hover:opacity-100"></li>
-        <li class="shrink-0"><img src="schwaebisch-hall_1000x500-300x150.08d4e749.png" alt="Schwäbisch Hall" loading="lazy" decoding="async" width="300" height="150" class="h-14 w-auto max-w-[190px] object-contain opacity-90 transition hover:opacity-100"></li>
-      </ul>
   </div>
 </section>
 
@@ -541,14 +518,14 @@
 
     <div class="reveal grid gap-8 lg:grid-cols-12 lg:items-end">
       <div class="lg:col-span-8">
-        <p class="text-sm font-semibold uppercase tracking-[0.18em] text-accent">Leistungen</p>
-        <h2 class="mt-4 text-3xl font-extrabold tracking-tight text-ink-900 sm:text-4xl lg:text-5xl">
-          So arbeiten wir mit Ihnen
+        <p class="ml-5"><span class="oblique-line">Leistungen</span></p>
+        <h2 class="mt-4 text-3xl font-normal tracking-tight text-ink-900 sm:text-4xl lg:text-5xl">
+          Vier Wege, wie wir mit Ihnen arbeiten
         </h2>
       </div>
       <p class="text-lg leading-relaxed text-ink-600 lg:col-span-4">
-        Wir fangen dort an, wo Ihre Organisation gerade steht – beim einzelnen Team
-        genauso wie auf der Führungsebene.
+        Maßgeschneidert für Sie: Wir setzen genau dort an, wo Ihre Organisation gerade steht –
+        vom einzelnen Team bis zur Führungsebene.
       </p>
     </div>
 
@@ -556,15 +533,15 @@
     <div class="mt-16 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
 
       <!-- Agile Coaching -->
-      <article class="reveal group relative flex flex-col overflow-hidden rounded-2xl border border-ink-200 bg-white p-8 transition duration-300 hover:-translate-y-1.5 hover:border-accent/40 hover:shadow-2xl hover:shadow-ink-900/10">
+      <article class="reveal group relative flex flex-col overflow-hidden border border-ink-200 bg-white p-8 transition duration-300 hover:border-accent/40">
         <span class="absolute inset-x-0 top-0 h-1 scale-x-0 bg-accent transition-transform duration-300 group-hover:scale-x-100" aria-hidden="true"></span>
-        <span class="flex h-14 w-14 items-center justify-center rounded-xl bg-accent/10 text-accent">
+        <span class="flex h-14 w-14 items-center justify-center bg-accent/10 text-accent">
           <svg class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.36-1.86M17 20H7m10 0v-2c0-.66-.13-1.29-.36-1.86m0 0A5 5 0 007 18v2m0 0H2v-2a3 3 0 015.36-1.86M7 20v-2c0-.66.13-1.29.36-1.86m0 0a5 5 0 019.28 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
         </span>
-        <h3 class="mt-6 text-lg font-bold text-ink-900">Team- &amp; Agile Coaching</h3>
+        <h3 class="mt-6 text-lg font-medium text-ink-900">Team- &amp; Agile Coaching</h3>
         <p class="mt-3 flex-1 text-[15px] leading-relaxed text-ink-600">
           Wir begleiten agile Teams von der Initialisierung über die Produktentwicklung bis zum
-          Abschluss – mit Retrospektiven, Workshops und dem Blick von außen.
+          Abschluss – mit Retrospektiven, Workshops und frischen Impulsen von außen.
         </p>
         <ul class="mt-6 space-y-2 text-sm text-ink-600">
           <li class="flex gap-2"><span class="text-accent">›</span>Team-Initialisierung &amp; Teambuilding</li>
@@ -574,15 +551,15 @@
       </article>
 
       <!-- Transformation -->
-      <article class="reveal group relative flex flex-col overflow-hidden rounded-2xl border border-ink-200 bg-white p-8 transition duration-300 hover:-translate-y-1.5 hover:border-accent/40 hover:shadow-2xl hover:shadow-ink-900/10">
+      <article class="reveal group relative flex flex-col overflow-hidden border border-ink-200 bg-white p-8 transition duration-300 hover:border-accent/40">
         <span class="absolute inset-x-0 top-0 h-1 scale-x-0 bg-accent transition-transform duration-300 group-hover:scale-x-100" aria-hidden="true"></span>
-        <span class="flex h-14 w-14 items-center justify-center rounded-xl bg-accent/10 text-accent">
+        <span class="flex h-14 w-14 items-center justify-center bg-accent/10 text-accent">
           <svg class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h5M20 20v-5h-5M20 9A8 8 0 006.3 5.3L4 7.5m16 9A8 8 0 016.3 18.7"/></svg>
         </span>
-        <h3 class="mt-6 text-lg font-bold text-ink-900">Transformation &amp; Skalierung</h3>
+        <h3 class="mt-6 text-lg font-medium text-ink-900">Transformation &amp; Skalierung</h3>
         <p class="mt-3 flex-1 text-[15px] leading-relaxed text-ink-600">
-          Wir helfen Ihnen, agile Arbeitsweisen auch außerhalb der IT zu verankern und so zu
-          skalieren, dass sie im Alltag funktionieren.
+          Organisationsentwicklung mit Augenmaß: Wir helfen, agile Arbeitsweisen über die IT hinaus
+          zu verankern – und sie so zu skalieren, dass sie im Alltag tragen.
         </p>
         <ul class="mt-6 space-y-2 text-sm text-ink-600">
           <li class="flex gap-2"><span class="text-accent">›</span>Skalierung (u. a. LeSS)</li>
@@ -592,15 +569,15 @@
       </article>
 
       <!-- Leadership -->
-      <article class="reveal group relative flex flex-col overflow-hidden rounded-2xl border border-ink-200 bg-white p-8 transition duration-300 hover:-translate-y-1.5 hover:border-accent/40 hover:shadow-2xl hover:shadow-ink-900/10">
+      <article class="reveal group relative flex flex-col overflow-hidden border border-ink-200 bg-white p-8 transition duration-300 hover:border-accent/40">
         <span class="absolute inset-x-0 top-0 h-1 scale-x-0 bg-accent transition-transform duration-300 group-hover:scale-x-100" aria-hidden="true"></span>
-        <span class="flex h-14 w-14 items-center justify-center rounded-xl bg-accent/10 text-accent">
+        <span class="flex h-14 w-14 items-center justify-center bg-accent/10 text-accent">
           <svg class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
         </span>
-        <h3 class="mt-6 text-lg font-bold text-ink-900">Leadership Development</h3>
+        <h3 class="mt-6 text-lg font-medium text-ink-900">Leadership Development</h3>
         <p class="mt-3 flex-1 text-[15px] leading-relaxed text-ink-600">
-          Führen in agilen Organisationen braucht passende Werkzeuge, eine klare Haltung und
-          offene Kommunikation. Wir begleiten Führungskräfte dabei persönlich.
+          Führung in agilen Kontexten heißt: die richtigen Werkzeuge auswählen, die passende Haltung
+          entwickeln und beides klar kommunizieren. Wir begleiten Führungskräfte dabei persönlich.
         </p>
         <ul class="mt-6 space-y-2 text-sm text-ink-600">
           <li class="flex gap-2"><span class="text-accent">›</span>Rollen- &amp; Führungskräfte-Coaching</li>
@@ -610,33 +587,32 @@
       </article>
 
       <!-- Training -->
-      <article class="reveal group relative flex flex-col overflow-hidden rounded-2xl border border-ink-200 bg-white p-8 transition duration-300 hover:-translate-y-1.5 hover:border-accent/40 hover:shadow-2xl hover:shadow-ink-900/10">
+      <article class="reveal group relative flex flex-col overflow-hidden border border-ink-200 bg-white p-8 transition duration-300 hover:border-accent/40">
         <span class="absolute inset-x-0 top-0 h-1 scale-x-0 bg-accent transition-transform duration-300 group-hover:scale-x-100" aria-hidden="true"></span>
-        <span class="flex h-14 w-14 items-center justify-center rounded-xl bg-accent/10 text-accent">
+        <span class="flex h-14 w-14 items-center justify-center bg-accent/10 text-accent">
           <svg class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.42A12 12 0 0118 16.5 12 12 0 0112 20a12 12 0 01-6-3.5 12 12 0 01-.16-5.92L12 14z"/></svg>
         </span>
-        <h3 class="mt-6 text-lg font-bold text-ink-900">Training &amp; Ausbildung</h3>
+        <h3 class="mt-6 text-lg font-medium text-ink-900">Workshops &amp; Trainings</h3>
         <p class="mt-3 flex-1 text-[15px] leading-relaxed text-ink-600">
-          Wir trainieren Teams und Führungskräfte an den Themen, die sie gerade beschäftigen –
-          praxisnah und mit viel Raum zum Ausprobieren.
+          Vom Einstieg bis zur Expertenrolle: Wir entwickeln Ihre Teams und Agile Coaches weiter –
+          erlebnisorientiert und direkt an den echten Herausforderungen aus Ihrem Alltag.
         </p>
         <ul class="mt-6 space-y-2 text-sm text-ink-600">
-          <li class="flex gap-2"><span class="text-accent">›</span>Coach Reflection Day</li>
+          <li class="flex gap-2"><span class="text-accent">›</span>Praxisnahe Workshops &amp; Trainings</li>
           <li class="flex gap-2"><span class="text-accent">›</span>Kanban &amp; Flow-Optimierung</li>
-          <li class="flex gap-2"><span class="text-accent">›</span>LEGO® Serious Play® Workshops</li>
+          <li class="flex gap-2"><span class="text-accent">›</span>Coach Reflection Day</li>
         </ul>
       </article>
     </div>
 
-    <!-- ÄNDERUNG 3 (Content-Bereinigung): nur noch 4 Formate; Scrum Master Ausbildung + alle übrigen entfernt -->
     <!-- Akkordeon: Formate im Detail -->
     <div class="reveal mt-20 grid gap-12 lg:grid-cols-12">
 
       <div class="lg:col-span-4">
-        <h3 class="text-2xl font-bold tracking-tight text-ink-900 sm:text-3xl">Unsere Formate im Detail</h3>
+        <h3 class="text-2xl font-medium tracking-tight text-ink-900 sm:text-3xl">Unsere Formate im Detail</h3>
         <p class="mt-4 text-[15px] leading-relaxed text-ink-600">
           Jedes Format lässt sich einzeln buchen oder zu einem Programm kombinieren.
-          Erzählen Sie uns, worum es geht, dann schlagen wir Ihnen einen passenden Rahmen vor.
+          Erzählen Sie uns von Ihren Zielen – wir schlagen den passenden Zuschnitt vor.
         </p>
         <a href="#kontakt" class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-accent transition hover:gap-3">
           Passendes Format finden
@@ -645,7 +621,7 @@
       </div>
 
       <div class="lg:col-span-8" x-data="{ open: 1 }">
-        <div class="divide-y divide-ink-200 overflow-hidden rounded-2xl border border-ink-200 bg-white">
+        <div class="divide-y divide-ink-200 overflow-hidden border border-ink-200 bg-white">
 
           <!-- Item 1 -->
           <div>
@@ -654,16 +630,16 @@
                       class="flex w-full items-center justify-between gap-4 px-6 py-6 text-left transition hover:bg-ink-50 sm:px-8">
                 <span class="text-base font-semibold text-ink-900 sm:text-lg">Organisationsentwicklung</span>
                 <span :class="open === 1 ? 'rotate-45 bg-accent text-white' : 'bg-ink-100 text-ink-700'"
-                      class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full transition duration-300">
+                      class="flex h-8 w-8 shrink-0 items-center justify-center transition duration-300">
                   <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path stroke-linecap="round" d="M12 5v14M5 12h14"/></svg>
                 </span>
               </button>
             </h4>
             <div id="acc-1" x-show="open === 1" x-collapse x-cloak>
               <div class="px-6 pb-7 text-[15px] leading-relaxed text-ink-600 sm:px-8">
-                Wir unterstützen Sie dabei, agile Arbeitsweisen über die IT hinaus zu verankern und zu
-                skalieren, zum Beispiel mit LeSS. Es geht um Strukturen, Rollen und Strategie genauso
-                wie um den Alltag der Teams.
+                Wir begleiten Ihre Organisation dabei, agile Arbeitsweisen nachhaltig zu verankern –
+                von Organisationsdesign und Rollenklärung bis zur Skalierung über Teams und Bereiche
+                hinweg, in der IT ebenso wie in Marketing, Produktion, HR oder Verwaltung.
               </div>
             </div>
           </div>
@@ -675,15 +651,16 @@
                       class="flex w-full items-center justify-between gap-4 px-6 py-6 text-left transition hover:bg-ink-50 sm:px-8">
                 <span class="text-base font-semibold text-ink-900 sm:text-lg">Führungskräfteentwicklung</span>
                 <span :class="open === 2 ? 'rotate-45 bg-accent text-white' : 'bg-ink-100 text-ink-700'"
-                      class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full transition duration-300">
+                      class="flex h-8 w-8 shrink-0 items-center justify-center transition duration-300">
                   <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path stroke-linecap="round" d="M12 5v14M5 12h14"/></svg>
                 </span>
               </button>
             </h4>
             <div id="acc-2" x-show="open === 2" x-collapse x-cloak>
               <div class="px-6 pb-7 text-[15px] leading-relaxed text-ink-600 sm:px-8">
-                Im persönlichen Coaching arbeiten wir mit Führungskräften an ihrer Rolle, an Entscheidungen
-                und an Moderation. Mit dem HBDI-Modell wird sichtbar, wie man selbst denkt und führt.
+                Persönliches Coaching und Entwicklungsprogramme für Führungskräfte in agilen Kontexten:
+                Wir stärken Haltung, Entscheidungs- und Moderationskompetenz und schaffen Raum für
+                Selbstreflexion – unter anderem mit dem HBDI®-Denkstilmodell.
               </div>
             </div>
           </div>
@@ -695,15 +672,16 @@
                       class="flex w-full items-center justify-between gap-4 px-6 py-6 text-left transition hover:bg-ink-50 sm:px-8">
                 <span class="text-base font-semibold text-ink-900 sm:text-lg">Workshops und Trainings</span>
                 <span :class="open === 3 ? 'rotate-45 bg-accent text-white' : 'bg-ink-100 text-ink-700'"
-                      class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full transition duration-300">
+                      class="flex h-8 w-8 shrink-0 items-center justify-center transition duration-300">
                   <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path stroke-linecap="round" d="M12 5v14M5 12h14"/></svg>
                 </span>
               </button>
             </h4>
             <div id="acc-3" x-show="open === 3" x-collapse x-cloak>
               <div class="px-6 pb-7 text-[15px] leading-relaxed text-ink-600 sm:px-8">
-                Ob Kanban, LEGO® Serious Play® oder ein Thema, das Sie mitbringen: In unseren Workshops
-                und Trainings arbeiten wir mit den Fragen, die sich Ihnen im Alltag tatsächlich stellen.
+                Praxisnahe Workshops und Trainings, zugeschnitten auf Ihre Teams: Ihre Mitarbeitenden
+                arbeiten direkt an ihren eigenen Themen und nehmen Methoden mit, die sie am nächsten
+                Tag im Alltag einsetzen können.
               </div>
             </div>
           </div>
@@ -715,16 +693,16 @@
                       class="flex w-full items-center justify-between gap-4 px-6 py-6 text-left transition hover:bg-ink-50 sm:px-8">
                 <span class="text-base font-semibold text-ink-900 sm:text-lg">Coach Reflection Day</span>
                 <span :class="open === 4 ? 'rotate-45 bg-accent text-white' : 'bg-ink-100 text-ink-700'"
-                      class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full transition duration-300">
+                      class="flex h-8 w-8 shrink-0 items-center justify-center transition duration-300">
                   <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path stroke-linecap="round" d="M12 5v14M5 12h14"/></svg>
                 </span>
               </button>
             </h4>
             <div id="acc-4" x-show="open === 4" x-collapse x-cloak>
               <div class="px-6 pb-7 text-[15px] leading-relaxed text-ink-600 sm:px-8">
-                Ein Tag für Scrum Master, Agile Coaches, Teamentwickler und Kanban Coaches, die Veränderung
-                begleiten: Abstand vom Alltag, Austausch mit Kolleginnen und Kollegen und Zeit, die
-                eigene Arbeit zu reflektieren.
+                Ein Tag für Reflexion und kollegialen Austausch unter Scrum Mastern, Agile Coaches,
+                Teamentwicklern und Kanban Coaches, die Veränderungsprozesse begleiten – mit frischen
+                Impulsen und neuer Energie für die eigene Praxis.
               </div>
             </div>
           </div>
@@ -743,13 +721,14 @@
   <div class="mx-auto max-w-8xl px-5 sm:px-8 lg:px-12">
 
     <div class="reveal mx-auto max-w-3xl text-center">
-      <p class="text-sm font-semibold uppercase tracking-[0.18em] text-accent">Impulse &amp; Downloads</p>
-      <h2 class="mt-4 text-3xl font-extrabold tracking-tight text-ink-900 sm:text-4xl lg:text-5xl">
-        Artikel und Materialien aus unserer Arbeit
+      <p><span class="oblique-line">Impulse &amp; Downloads</span></p>
+      <h2 class="mt-4 text-3xl font-normal tracking-tight text-ink-900 sm:text-4xl lg:text-5xl">
+        Wissen, das Sie sofort nutzen können
       </h2>
       <p class="mt-6 text-lg leading-relaxed text-ink-600">
-        Gedanken aus unserer Beratungspraxis und kostenlose Vorlagen für Retrospektiven,
-        Moderation und Teamentwicklung. Alles davon haben wir selbst mit Teams ausprobiert.      </p>
+        Artikel aus unserer Praxis und kostenlose Materialien für Retrospektiven, Moderation
+        und Teamentwicklung – erprobt in echten Teams und direkt praxistauglich.
+      </p>
     </div>
 
     <!-- Tabs / Filter -->
@@ -764,9 +743,9 @@
                 @click="tab = item.id"
                 :aria-pressed="(tab === item.id).toString()"
                 :class="tab === item.id
-                  ? 'bg-ink-900 text-white shadow-lg shadow-ink-900/15'
+                  ? 'bg-ink-900 text-white'
                   : 'bg-white text-ink-600 border border-ink-200 hover:border-ink-400 hover:text-ink-900'"
-                class="rounded-full px-5 py-2.5 text-sm font-semibold transition duration-200"
+                class="px-5 py-2.5 text-sm font-semibold transition duration-200"
                 x-text="item.label"></button>
       </template>
     </div>
@@ -776,21 +755,21 @@
 
       <!-- Artikel: Leadership -->
       <article x-show="tab === 'alle' || tab === 'leadership'" x-transition.opacity
-               class="reveal group flex flex-col overflow-hidden rounded-2xl border border-ink-200 bg-white transition duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-ink-900/10">
+               class="reveal group flex flex-col overflow-hidden border border-ink-200 bg-white transition duration-300">
         <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
              alt="" loading="lazy" decoding="async" width="800" height="450"
              class="aspect-[16/9] w-full object-cover transition duration-700 group-hover:scale-105">
         <div class="flex flex-1 flex-col p-7">
           <div class="flex items-center gap-3 text-xs font-semibold uppercase tracking-wider">
-            <span class="rounded-full bg-accent/10 px-2.5 py-1 text-accent">Agile Leadership</span>
+            <span class="bg-accent/10 px-2.5 py-1 text-accent">Agile Leadership</span>
             <time datetime="2025-01-21" class="text-ink-400">21.01.2025</time>
           </div>
-          <h3 class="mt-4 text-lg font-bold leading-snug text-ink-900">
+          <h3 class="mt-4 text-lg font-medium leading-snug text-ink-900">
             Don’t call it Retro – warum „Teamzeit“ der bessere Name ist
           </h3>
           <p class="mt-3 flex-1 text-[15px] leading-relaxed text-ink-600">
-            Wenn die Retrospektive zum Pflichttermin geworden ist, hilft oft schon ein neuer Name.
-            Über die Wirkung von Sprache im Team.
+            Ein neuer Rahmen gibt der Retrospektive frischen Schwung. Über die Wirkung von
+            Sprache im Team.
           </p>
           <a href="https://www.agile-elevation.de/impulse/dont-call-it-retro-warum-teamzeit-der-bessere-name-fur-retrospektiven-ist"
              class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-accent transition group-hover:gap-3">
@@ -802,21 +781,22 @@
 
       <!-- Artikel: Methoden -->
       <article x-show="tab === 'alle' || tab === 'methoden'" x-transition.opacity
-               class="reveal group flex flex-col overflow-hidden rounded-2xl border border-ink-200 bg-white transition duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-ink-900/10">
+               class="reveal group flex flex-col overflow-hidden border border-ink-200 bg-white transition duration-300">
         <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80"
              alt="" loading="lazy" decoding="async" width="800" height="450"
              class="aspect-[16/9] w-full object-cover transition duration-700 group-hover:scale-105">
         <div class="flex flex-1 flex-col p-7">
           <div class="flex items-center gap-3 text-xs font-semibold uppercase tracking-wider">
-            <span class="rounded-full bg-accent/10 px-2.5 py-1 text-accent">Methoden</span>
+            <span class="bg-accent/10 px-2.5 py-1 text-accent">Methoden</span>
             <time datetime="2022-12-07" class="text-ink-400">07.12.2022</time>
           </div>
-          <h3 class="mt-4 text-lg font-bold leading-snug text-ink-900">
+          <h3 class="mt-4 text-lg font-medium leading-snug text-ink-900">
             Moderation mit Timeboxen
           </h3>
           <p class="mt-3 flex-1 text-[15px] leading-relaxed text-ink-600">
-            Timeboxen sind mehr als eine Uhr im Raum. Wie sie für Fokus sorgen und trotzdem Platz
-            für gute Gespräche lassen.          </p>
+            Timeboxen sind ein starkes Moderationswerkzeug. Wie Sie damit Fokus erzeugen und Ihre
+            Teilnehmenden entspannt und zielgerichtet durch den Termin führen.
+          </p>
           <a href="https://www.agile-elevation.de/impulse/moderation-mit-timeboxen"
              class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-accent transition group-hover:gap-3">
             Artikel lesen
@@ -827,21 +807,21 @@
 
       <!-- Artikel: Leadership -->
       <article x-show="tab === 'alle' || tab === 'leadership'" x-transition.opacity
-               class="reveal group flex flex-col overflow-hidden rounded-2xl border border-ink-200 bg-white transition duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-ink-900/10">
+               class="reveal group flex flex-col overflow-hidden border border-ink-200 bg-white transition duration-300">
         <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=800&q=80"
              alt="" loading="lazy" decoding="async" width="800" height="450"
              class="aspect-[16/9] w-full object-cover transition duration-700 group-hover:scale-105">
         <div class="flex flex-1 flex-col p-7">
           <div class="flex items-center gap-3 text-xs font-semibold uppercase tracking-wider">
-            <span class="rounded-full bg-accent/10 px-2.5 py-1 text-accent">Agile Leadership</span>
+            <span class="bg-accent/10 px-2.5 py-1 text-accent">Agile Leadership</span>
             <time datetime="2021-11-08" class="text-ink-400">08.11.2021</time>
           </div>
-          <h3 class="mt-4 text-lg font-bold leading-snug text-ink-900">
+          <h3 class="mt-4 text-lg font-medium leading-snug text-ink-900">
             Glaub an dein Team
           </h3>
           <p class="mt-3 flex-1 text-[15px] leading-relaxed text-ink-600">
-            Vertrauen kommt vor den guten Ergebnissen, nicht erst danach. Was das für Führungskräfte
-            konkret heißt.
+            Vertrauen ist die Voraussetzung für gute Ergebnisse – und was das für
+            Führungskräfte konkret bedeutet.
           </p>
           <a href="https://www.agile-elevation.de/impulse/glaub-an-dein-team"
              class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-accent transition group-hover:gap-3">
@@ -853,126 +833,126 @@
 
       <!-- Download 1 -->
       <article x-show="tab === 'alle' || tab === 'downloads' || tab === 'methoden'" x-transition.opacity
-               class="reveal flex flex-col rounded-2xl border border-ink-200 bg-white p-7 transition duration-300 hover:-translate-y-1 hover:border-accent/40 hover:shadow-xl hover:shadow-ink-900/10">
+               class="reveal flex flex-col border border-ink-200 bg-white p-7 transition duration-300 hover:border-accent/40">
         <div class="flex items-start justify-between gap-4">
-          <span class="flex h-11 w-11 items-center justify-center rounded-xl bg-accent/10 text-accent">
+          <span class="flex h-11 w-11 items-center justify-center bg-accent/10 text-accent">
             <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16"/></svg>
           </span>
-          <span class="rounded-full bg-ink-100 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-ink-600">PDF · kostenlos</span>
+          <span class="bg-ink-100 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-ink-600">PDF · kostenlos</span>
         </div>
-        <h3 class="mt-5 text-lg font-bold leading-snug text-ink-900">Maßnahmen-Template für Retrospektiven</h3>
+        <h3 class="mt-5 text-lg font-medium leading-snug text-ink-900">Maßnahmen-Template für Retrospektiven</h3>
         <p class="mt-3 flex-1 text-[15px] leading-relaxed text-ink-600">
-          Ein kompaktes Template, mit dem Teams ihre Maßnahmen so formulieren, dass sie nach der
-          Retrospektive auch wirklich umgesetzt werden.
+          Kompaktes Template, das es dem Team erleichtert, Maßnahmen so zu formulieren, dass sie
+          nach der Retrospektive auch umgesetzt werden.
         </p>
         <a href="retrospektiven-massnahmen-template-5f96b05aeb873639970797.pdf" download
            class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-accent transition hover:gap-3">
-          Herunterladen <span class="font-medium text-ink-400">(PDF)</span>
+          Herunterladen <span class="font-normal text-ink-400">(PDF)</span>
           <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5-5 5M6 12h12"/></svg>
         </a>
       </article>
 
       <!-- Download 2 -->
       <article x-show="tab === 'alle' || tab === 'downloads' || tab === 'leadership'" x-transition.opacity
-               class="reveal flex flex-col rounded-2xl border border-ink-200 bg-white p-7 transition duration-300 hover:-translate-y-1 hover:border-accent/40 hover:shadow-xl hover:shadow-ink-900/10">
+               class="reveal flex flex-col border border-ink-200 bg-white p-7 transition duration-300 hover:border-accent/40">
         <div class="flex items-start justify-between gap-4">
-          <span class="flex h-11 w-11 items-center justify-center rounded-xl bg-accent/10 text-accent">
+          <span class="flex h-11 w-11 items-center justify-center bg-accent/10 text-accent">
             <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h10M4 18h7"/></svg>
           </span>
-          <span class="rounded-full bg-ink-100 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-ink-600">Kartenset</span>
+          <span class="bg-ink-100 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-ink-600">Kartenset</span>
         </div>
-        <h3 class="mt-5 text-lg font-bold leading-snug text-ink-900">Wertekarten mit Wertequadrat</h3>
+        <h3 class="mt-5 text-lg font-medium leading-snug text-ink-900">Wertekarten mit Wertequadrat</h3>
         <p class="mt-3 flex-1 text-[15px] leading-relaxed text-ink-600">
           Karten mit unterschiedlichen Werten samt Übertreibungen und Gegenwerten – für
           Selbstreflexion und Feedback in Team und Führung.
         </p>
         <a href="https://www.agile-elevation.de/download/count/10/downloads/wertequadrat-karten-5f29c7d9d563e436256031.pdf"
            class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-accent transition hover:gap-3">
-          Herunterladen <span class="font-medium text-ink-400">(PDF)</span>
+          Herunterladen <span class="font-normal text-ink-400">(PDF)</span>
           <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5-5 5M6 12h12"/></svg>
         </a>
       </article>
 
       <!-- Download 3 -->
       <article x-show="tab === 'alle' || tab === 'downloads' || tab === 'methoden'" x-transition.opacity
-               class="reveal flex flex-col rounded-2xl border border-ink-200 bg-white p-7 transition duration-300 hover:-translate-y-1 hover:border-accent/40 hover:shadow-xl hover:shadow-ink-900/10">
+               class="reveal flex flex-col border border-ink-200 bg-white p-7 transition duration-300 hover:border-accent/40">
         <div class="flex items-start justify-between gap-4">
-          <span class="flex h-11 w-11 items-center justify-center rounded-xl bg-accent/10 text-accent">
+          <span class="flex h-11 w-11 items-center justify-center bg-accent/10 text-accent">
             <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M14.5 4h-5L4 9.5v5L9.5 20h5l5.5-5.5v-5L14.5 4z"/><path stroke-linecap="round" d="M12 8v4m0 4h.01"/></svg>
           </span>
-          <span class="rounded-full bg-ink-100 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-ink-600">Simulation</span>
+          <span class="bg-ink-100 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-ink-600">Simulation</span>
         </div>
-        <h3 class="mt-5 text-lg font-bold leading-snug text-ink-900">„Entscheiden mit Zombies und Werwölfen“</h3>
+        <h3 class="mt-5 text-lg font-medium leading-snug text-ink-900">„Entscheiden mit Zombies und Werwölfen“</h3>
         <p class="mt-3 flex-1 text-[15px] leading-relaxed text-ink-600">
           Ein unterhaltsames Spiel, um verschiedene Entscheidungsverfahren kennenzulernen und
           im Team zu simulieren. Inklusive Anleitung.
         </p>
         <a href="https://www.agile-elevation.de/download/count/9/downloads/entscheiden-mit-werwolfen-und-zombies-5f29c7bf88582690621067.pdf"
            class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-accent transition hover:gap-3">
-          Herunterladen <span class="font-medium text-ink-400">(PDF)</span>
+          Herunterladen <span class="font-normal text-ink-400">(PDF)</span>
           <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5-5 5M6 12h12"/></svg>
         </a>
       </article>
 
       <!-- Download 4 -->
       <article x-show="tab === 'alle' || tab === 'downloads' || tab === 'methoden'" x-transition.opacity
-               class="reveal flex flex-col rounded-2xl border border-ink-200 bg-white p-7 transition duration-300 hover:-translate-y-1 hover:border-accent/40 hover:shadow-xl hover:shadow-ink-900/10">
+               class="reveal flex flex-col border border-ink-200 bg-white p-7 transition duration-300 hover:border-accent/40">
         <div class="flex items-start justify-between gap-4">
-          <span class="flex h-11 w-11 items-center justify-center rounded-xl bg-accent/10 text-accent">
+          <span class="flex h-11 w-11 items-center justify-center bg-accent/10 text-accent">
             <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.55-2.28A1 1 0 0121 8.62v6.76a1 1 0 01-1.45.9L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
           </span>
-          <span class="rounded-full bg-ink-100 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-ink-600">Trainingsspiel</span>
+          <span class="bg-ink-100 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-ink-600">Trainingsspiel</span>
         </div>
-        <h3 class="mt-5 text-lg font-bold leading-snug text-ink-900">„Devil’s Facilitation Playground“</h3>
+        <h3 class="mt-5 text-lg font-medium leading-snug text-ink-900">„Devil’s Facilitation Playground“</h3>
         <p class="mt-3 flex-1 text-[15px] leading-relaxed text-ink-600">
           Karten &amp; Anleitung für ein dynamisches Spiel, mit dem Sie Ihre Moderationsskills in
           einer sicheren Umgebung trainieren.
         </p>
         <a href="https://www.agile-elevation.de/download/count/8/downloads/devilsfacilitationplayground-5f29c7983dfd6943428728.zip"
            class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-accent transition hover:gap-3">
-          Herunterladen <span class="font-medium text-ink-400">(ZIP)</span>
+          Herunterladen <span class="font-normal text-ink-400">(ZIP)</span>
           <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5-5 5M6 12h12"/></svg>
         </a>
       </article>
 
       <!-- Download 5 -->
       <article x-show="tab === 'alle' || tab === 'downloads' || tab === 'leadership'" x-transition.opacity
-               class="reveal flex flex-col rounded-2xl border border-ink-200 bg-white p-7 transition duration-300 hover:-translate-y-1 hover:border-accent/40 hover:shadow-xl hover:shadow-ink-900/10">
+               class="reveal flex flex-col border border-ink-200 bg-white p-7 transition duration-300 hover:border-accent/40">
         <div class="flex items-start justify-between gap-4">
-          <span class="flex h-11 w-11 items-center justify-center rounded-xl bg-accent/10 text-accent">
+          <span class="flex h-11 w-11 items-center justify-center bg-accent/10 text-accent">
             <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.36-1.86M7 20H2v-2a3 3 0 015.36-1.86M12 12a4 4 0 100-8 4 4 0 000 8zm0 0c2.2 0 4 1.8 4 4v4H8v-4c0-2.2 1.8-4 4-4z"/></svg>
           </span>
-          <span class="rounded-full bg-ink-100 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-ink-600">Workshop-Material</span>
+          <span class="bg-ink-100 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-ink-600">Workshop-Material</span>
         </div>
-        <h3 class="mt-5 text-lg font-bold leading-snug text-ink-900">Teamrollen-Retrospektive nach Belbin</h3>
+        <h3 class="mt-5 text-lg font-medium leading-snug text-ink-900">Teamrollen-Retrospektive nach Belbin</h3>
         <p class="mt-3 flex-1 text-[15px] leading-relaxed text-ink-600">
           Erklärung der Teamrollen inklusive Präsentation und grobem Ablauf für eine
           Teamrollen-Retrospektive.
         </p>
         <a href="https://www.agile-elevation.de/download/count/5/downloads/belbin-teamrollen-retro-material-5f29c678dc538039257931.zip"
            class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-accent transition hover:gap-3">
-          Herunterladen <span class="font-medium text-ink-400">(ZIP)</span>
+          Herunterladen <span class="font-normal text-ink-400">(ZIP)</span>
           <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5-5 5M6 12h12"/></svg>
         </a>
       </article>
 
       <!-- Download 6 -->
       <article x-show="tab === 'alle' || tab === 'downloads' || tab === 'methoden'" x-transition.opacity
-               class="reveal flex flex-col rounded-2xl border border-ink-200 bg-white p-7 transition duration-300 hover:-translate-y-1 hover:border-accent/40 hover:shadow-xl hover:shadow-ink-900/10">
+               class="reveal flex flex-col border border-ink-200 bg-white p-7 transition duration-300 hover:border-accent/40">
         <div class="flex items-start justify-between gap-4">
-          <span class="flex h-11 w-11 items-center justify-center rounded-xl bg-accent/10 text-accent">
+          <span class="flex h-11 w-11 items-center justify-center bg-accent/10 text-accent">
             <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
           </span>
-          <span class="rounded-full bg-ink-100 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-ink-600">Checkliste</span>
+          <span class="bg-ink-100 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-ink-600">Checkliste</span>
         </div>
-        <h3 class="mt-5 text-lg font-bold leading-snug text-ink-900">Vorbereitungshilfe für Retrospektiven</h3>
+        <h3 class="mt-5 text-lg font-medium leading-snug text-ink-900">Vorbereitungshilfe für Retrospektiven</h3>
         <p class="mt-3 flex-1 text-[15px] leading-relaxed text-ink-600">
           Was muss ich beachten? Wie ist mein Plan? Was war das Ergebnis? Ein Template, das
           Retrospektiven strukturiert vorbereitet und nachbereitet.
         </p>
         <a href="https://www.agile-elevation.de/download/count/4/downloads/retrospektiven-vorbereitung-5f29c6531fd02206189328.pdf"
            class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-accent transition hover:gap-3">
-          Herunterladen <span class="font-medium text-ink-400">(PDF)</span>
+          Herunterladen <span class="font-normal text-ink-400">(PDF)</span>
           <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5-5 5M6 12h12"/></svg>
         </a>
       </article>
@@ -980,7 +960,7 @@
 
     <div class="reveal mt-14 text-center">
       <a href="https://www.agile-elevation.de/impulse"
-         class="inline-flex items-center gap-2 rounded-full border border-ink-300 bg-white px-7 py-3.5 text-sm font-semibold text-ink-800 transition hover:border-ink-900 hover:bg-ink-900 hover:text-white">
+         class="inline-flex items-center gap-2 border border-ink-300 bg-white px-7 py-3.5 text-sm font-semibold text-ink-800 transition hover:border-ink-900 hover:bg-ink-900 hover:text-white">
         Alle Impulse ansehen
         <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5-5 5M6 12h12"/></svg>
       </a>
@@ -991,74 +971,72 @@
 <!-- =====================================================================
      6. KONTAKT-BANNER
      ===================================================================== -->
-<section id="kontakt" class="relative overflow-hidden bg-ink-900 py-24 sm:py-32">
+<section id="kontakt" class="relative overflow-hidden bg-graphite py-24 sm:py-32">
 
-  <div class="pointer-events-none absolute inset-0 grid-pattern opacity-60" aria-hidden="true"></div>
-  <div class="pointer-events-none absolute -right-32 -top-24 h-[30rem] w-[30rem] rounded-full bg-accent/20 blur-3xl" aria-hidden="true"></div>
-  <div class="pointer-events-none absolute -bottom-32 left-0 h-[26rem] w-[26rem] rounded-full bg-ink-600/40 blur-3xl" aria-hidden="true"></div>
 
   <div class="relative mx-auto max-w-8xl px-5 sm:px-8 lg:px-12">
-    <div class="reveal grid items-center gap-14 rounded-3xl border border-white/10 bg-white/[0.04] p-8 backdrop-blur sm:p-12 lg:grid-cols-12 lg:p-16">
+    <div class="reveal grid items-center gap-14 border border-white/15 p-8 sm:p-12 lg:grid-cols-12 lg:p-16">
 
       <div class="lg:col-span-7">
-        <p class="text-sm font-semibold uppercase tracking-[0.18em] text-accent">Erstgespräch</p>
-        <h2 class="mt-4 text-3xl font-extrabold leading-tight tracking-tight text-white sm:text-4xl lg:text-[2.75rem]">
-          Erzählen Sie uns, worum es geht.
+        <p><span class="oblique-line oblique-line-light">Erstgespräch</span></p>
+        <h2 class="mt-4 text-3xl font-normal leading-tight tracking-tight text-white sm:text-4xl lg:text-[2.75rem]">
+          Reden wir 30 Minuten über Ihre Situation.
         </h2>
         <p class="mt-6 max-w-xl text-lg leading-relaxed text-ink-300">
-          Das Erstgespräch ist kostenfrei und unverbindlich. Sie schildern Ihre Situation, wir sagen
-          Ihnen offen, ob und wie wir helfen können. Sie sprechen dabei immer direkt mit einem von uns dreien.
+          Kostenfrei, unverbindlich und ganz auf Ihr Anliegen fokussiert. Sie schildern Ihre
+          Situation – wir zeigen Ihnen offen, wie wir Sie unterstützen können. Es antwortet immer
+          einer von uns dreien persönlich.
         </p>
 
         <div class="mt-10 flex flex-col gap-4 sm:flex-row">
           <a href="mailto:info@agile-elevation.de?subject=Anfrage%20Erstgespr%C3%A4ch&amp;body=Hallo%20%2Fagile%20elevation%2F%2C%0A%0Akurz%20zu%20unserer%20Situation%3A%0A%0A"
-             class="group inline-flex items-center justify-center gap-2.5 rounded-full bg-accent px-8 py-4 text-base font-semibold text-white shadow-xl shadow-accent/25 transition duration-300 hover:-translate-y-0.5 hover:bg-accent-600">
+             class="group inline-flex items-center justify-center gap-2.5 bg-white px-8 py-4 text-base font-normal uppercase tracking-wide text-ink-900 transition duration-300 hover:bg-ink-100">
             Erstgespräch per E-Mail anfragen
             <svg class="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5-5 5M6 12h12"/></svg>
           </a>
-          <a href="tel:+4915151917650"
-             class="inline-flex items-center justify-center gap-2.5 rounded-full border border-white/25 px-8 py-4 text-base font-semibold text-white transition duration-300 hover:border-white/60 hover:bg-white/5">
-            <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h2.28a1 1 0 01.95.68l1.2 3.6a1 1 0 01-.5 1.2L7.5 9.5a12 12 0 007 7l1.02-1.43a1 1 0 011.2-.5l3.6 1.2a1 1 0 01.68.95V19a2 2 0 01-2 2h-1C10.6 21 3 13.4 3 5z"/></svg>
-            Anrufen
-          </a>
         </div>
+
+        <p class="mt-8 flex items-center gap-2 text-sm text-ink-300">
+          <svg class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+          Antwort in der Regel innerhalb eines Werktags
+        </p>
       </div>
 
       <!-- Direktkontakt-Karte -->
       <div class="lg:col-span-5">
-        <div class="rounded-2xl border border-white/10 bg-ink-800/70 p-8">
-          <h3 class="text-lg font-bold text-white">Lieber direkt?</h3>
-          <p class="mt-2 text-sm leading-relaxed text-ink-400">Rufen Sie an oder schreiben Sie uns eine Mail.</p>
+        <div class="border border-white/10 bg-black/20 p-8">
+          <h3 class="text-lg font-medium text-white">Lieber direkt?</h3>
+          <p class="mt-2 text-sm leading-relaxed text-ink-300">Rufen Sie an oder schreiben Sie uns eine Mail.</p>
 
           <dl class="mt-7 space-y-5">
             <div class="flex items-start gap-4">
-              <span class="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-accent/15 text-accent">
+              <span class="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center border border-white/30 text-white">
                 <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h2.28a1 1 0 01.95.68l1.2 3.6a1 1 0 01-.5 1.2L7.5 9.5a12 12 0 007 7l1.02-1.43a1 1 0 011.2-.5l3.6 1.2a1 1 0 01.68.95V19a2 2 0 01-2 2h-1C10.6 21 3 13.4 3 5z"/></svg>
               </span>
               <div>
-                <dt class="text-xs font-semibold uppercase tracking-wider text-ink-400">Telefon</dt>
-                <dd><a href="tel:+4915151917650" class="text-base font-semibold text-white transition hover:text-accent">0151 – 519 176 50</a></dd>
+                <dt class="text-xs font-semibold uppercase tracking-wider text-ink-300">Telefon</dt>
+                <dd><a href="tel:+4915151917650" class="text-base font-semibold text-white transition hover:text-white">0151 – 519 176 50</a></dd>
               </div>
             </div>
 
             <div class="flex items-start gap-4">
-              <span class="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-accent/15 text-accent">
+              <span class="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center border border-white/30 text-white">
                 <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l9 6 9-6M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
               </span>
               <div>
-                <dt class="text-xs font-semibold uppercase tracking-wider text-ink-400">E-Mail</dt>
+                <dt class="text-xs font-semibold uppercase tracking-wider text-ink-300">E-Mail</dt>
                 
-                <dd><a href="mailto:info@agile-elevation.de" class="text-base font-semibold text-white transition hover:text-accent">info@agile-elevation.de</a></dd>
+                <dd><a href="mailto:info@agile-elevation.de" class="text-base font-semibold text-white transition hover:text-white">info@agile-elevation.de</a></dd>
               </div>
             </div>
 
             <div class="flex items-start gap-4">
-              <span class="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-accent/15 text-accent">
+              <span class="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center border border-white/30 text-white">
                 <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 110-4.14 2.07 2.07 0 010 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
               </span>
               <div>
-                <dt class="text-xs font-semibold uppercase tracking-wider text-ink-400">LinkedIn</dt>
-                <dd><a href="https://www.linkedin.com/company/agile-elevation/" target="_blank" rel="noopener noreferrer" class="text-base font-semibold text-white transition hover:text-accent">/agile elevation/</a></dd>
+                <dt class="text-xs font-semibold uppercase tracking-wider text-ink-300">LinkedIn</dt>
+                <dd><a href="https://www.linkedin.com/company/agile-elevation/" target="_blank" rel="noopener noreferrer" class="text-base font-semibold text-white transition hover:text-white">/agile elevation/</a></dd>
               </div>
             </div>
           </dl>
@@ -1066,6 +1044,7 @@
       </div>
     </div>
   </div>
+
 </section>
 
 </main>
@@ -1073,34 +1052,34 @@
 <!-- =====================================================================
      7. FOOTER
      ===================================================================== -->
-<footer class="bg-ink-950 pt-20 pb-10 text-ink-300">
+<footer class="bg-graphite pt-20 pb-10 text-ink-300">
   <div class="mx-auto max-w-8xl px-5 sm:px-8 lg:px-12">
 
     <div class="grid gap-12 lg:grid-cols-12">
 
       <!-- Marke -->
       <div class="lg:col-span-4">
-        <a href="#hero" class="flex items-center gap-1 text-xl font-extrabold tracking-tight text-white">
-          <span class="text-accent">/</span><span>agile&nbsp;elevation</span><span class="text-accent">/</span>
+        <a href="#hero" class="flex items-center gap-1 text-xl font-normal tracking-tight text-white">
+          <span class="text-ink-400">/</span><span>agile&nbsp;elevation</span><span class="text-ink-400">/</span>
         </a>
-        <p class="mt-5 max-w-sm text-[15px] leading-relaxed text-ink-400">
-          Wir erweitern Ihre Möglichkeiten. Agile Beratung, Coaching und Training
+        <p class="mt-5 max-w-sm text-[15px] leading-relaxed text-ink-300">
+          wir erweitern Ihre Möglichkeiten. Agile Beratung, Coaching und Ausbildung
           von drei erfahrenen Partnern – seit 2015.
         </p>
 
         <div class="mt-7 flex items-center gap-3">
           <a href="https://www.linkedin.com/company/agile-elevation/" target="_blank" rel="noopener noreferrer"
-             class="flex h-11 w-11 items-center justify-center rounded-xl bg-white/5 text-ink-300 transition hover:bg-accent hover:text-white">
+             class="flex h-11 w-11 items-center justify-center bg-white/5 text-ink-300 transition hover:bg-white hover:text-ink-900">
             <span class="sr-only">/agile elevation/ auf LinkedIn</span>
             <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 110-4.14 2.07 2.07 0 010 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
           </a>
           <a href="mailto:info@agile-elevation.de"
-             class="flex h-11 w-11 items-center justify-center rounded-xl bg-white/5 text-ink-300 transition hover:bg-accent hover:text-white">
+             class="flex h-11 w-11 items-center justify-center bg-white/5 text-ink-300 transition hover:bg-white hover:text-ink-900">
             <span class="sr-only">E-Mail schreiben</span>
             <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l9 6 9-6M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
           </a>
           <a href="tel:+4915151917650"
-             class="flex h-11 w-11 items-center justify-center rounded-xl bg-white/5 text-ink-300 transition hover:bg-accent hover:text-white">
+             class="flex h-11 w-11 items-center justify-center bg-white/5 text-ink-300 transition hover:bg-white hover:text-ink-900">
             <span class="sr-only">Anrufen</span>
             <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h2.28a1 1 0 01.95.68l1.2 3.6a1 1 0 01-.5 1.2L7.5 9.5a12 12 0 007 7l1.02-1.43a1 1 0 011.2-.5l3.6 1.2a1 1 0 01.68.95V19a2 2 0 01-2 2h-1C10.6 21 3 13.4 3 5z"/></svg>
           </a>
@@ -1111,26 +1090,26 @@
       <div class="lg:col-span-5">
         <h3 class="text-sm font-semibold uppercase tracking-[0.14em] text-white">Standorte</h3>
         <div class="mt-6 grid gap-6 sm:grid-cols-3">
-          <address class="not-italic text-sm leading-relaxed text-ink-400">
-            <span class="block font-semibold text-ink-200">Fabian Schiller</span>
+          <address class="not-italic text-sm leading-relaxed text-ink-300">
+            <a href="https://de.linkedin.com/in/fabianschiller" target="_blank" rel="noopener noreferrer" class="block font-semibold text-ink-200 underline-offset-4 transition hover:text-white hover:underline" aria-label="Fabian Schiller auf LinkedIn (öffnet in neuem Tab)">Fabian Schiller</a>
             Brandstätterstr. 19<br>
             D-90556 Cadolzburg
           </address>
-          <address class="not-italic text-sm leading-relaxed text-ink-400">
-            <span class="block font-semibold text-ink-200">Björn Andersson</span>
+          <address class="not-italic text-sm leading-relaxed text-ink-300">
+            <a href="https://de.linkedin.com/in/bjornradon" target="_blank" rel="noopener noreferrer" class="block font-semibold text-ink-200 underline-offset-4 transition hover:text-white hover:underline" aria-label="Björn Andersson auf LinkedIn (öffnet in neuem Tab)">Björn Andersson</a>
             Blindstraße 12<br>
             D-76187 Karlsruhe
           </address>
-          <address class="not-italic text-sm leading-relaxed text-ink-400">
-            <span class="block font-semibold text-ink-200">Martin Heider</span>
+          <address class="not-italic text-sm leading-relaxed text-ink-300">
+            <a href="https://de.linkedin.com/in/martin-heider-1286a8" target="_blank" rel="noopener noreferrer" class="block font-semibold text-ink-200 underline-offset-4 transition hover:text-white hover:underline" aria-label="Martin Heider auf LinkedIn (öffnet in neuem Tab)">Martin Heider</a>
             Isaak-Loewi-Straße 9<br>
             D-90763 Fürth
           </address>
         </div>
 
         <div class="mt-8 flex flex-wrap gap-x-8 gap-y-3 text-sm">
-          <a href="tel:+4915151917650" class="font-semibold text-white transition hover:text-accent">0151 – 519 176 50</a>
-          <a href="mailto:info@agile-elevation.de" class="font-semibold text-white transition hover:text-accent">info@agile-elevation.de</a>
+          <a href="tel:+4915151917650" class="font-semibold text-white transition hover:text-white">0151 – 519 176 50</a>
+          <a href="mailto:info@agile-elevation.de" class="font-semibold text-white transition hover:text-white">info@agile-elevation.de</a>
         </div>
       </div>
 
@@ -1138,22 +1117,22 @@
       <div class="lg:col-span-3">
         <h3 class="text-sm font-semibold uppercase tracking-[0.14em] text-white">Navigation</h3>
         <ul class="mt-6 space-y-3 text-sm">
-          <li><a href="#team" class="text-ink-400 transition hover:text-accent">Team</a></li>
-          <li><a href="#leistungen" class="text-ink-400 transition hover:text-accent">Leistungen</a></li>
-          <li><a href="#impulse" class="text-ink-400 transition hover:text-accent">Impulse &amp; Downloads</a></li>
-          <li><a href="#kontakt" class="text-ink-400 transition hover:text-accent">Kontakt</a></li>
+          <li><a href="#team" class="text-ink-300 transition hover:text-white">Team</a></li>
+          <li><a href="#leistungen" class="text-ink-300 transition hover:text-white">Leistungen</a></li>
+          <li><a href="#impulse" class="text-ink-300 transition hover:text-white">Impulse &amp; Downloads</a></li>
+          <li><a href="#kontakt" class="text-ink-300 transition hover:text-white">Kontakt</a></li>
         </ul>
       </div>
     </div>
 
-    <!-- Rechtliches (Pflichtangaben stehen vollständig im Impressum) -->
+    <!-- Rechtliches -->
     <div class="mt-16 flex flex-col gap-5 border-t border-white/10 pt-8 sm:flex-row sm:items-center sm:justify-between">
       <p class="text-sm text-ink-400">
         © <span id="year">2026</span> /agile elevation/ – Alle Rechte vorbehalten.
       </p>
       <nav class="flex flex-wrap items-center gap-x-7 gap-y-2 text-sm" aria-label="Rechtliches">
-        <a href="impressum.html" class="text-ink-400 transition hover:text-accent">Impressum</a>
-        <a href="datenschutz.html" class="text-ink-400 transition hover:text-accent">Datenschutzerklärung</a>
+        <a href="impressum.html" class="text-ink-300 transition hover:text-white">Impressum</a>
+        <a href="datenschutz.html" class="text-ink-300 transition hover:text-white">Datenschutzerklärung</a>
       </nav>
     </div>
   </div>
@@ -1161,7 +1140,7 @@
 
 <!-- Zurück-nach-oben -->
 <button id="to-top" type="button"
-        class="fixed bottom-6 right-6 z-40 flex h-12 w-12 translate-y-4 items-center justify-center rounded-full bg-ink-900 text-white opacity-0 shadow-xl transition-all duration-300 hover:bg-accent">
+        class="fixed bottom-6 right-6 z-40 flex h-12 w-12 translate-y-4 items-center justify-center bg-ink-900 text-white opacity-0 transition-all duration-300 hover:bg-accent">
   <span class="sr-only">Nach oben scrollen</span>
   <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/></svg>
 </button>

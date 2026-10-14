@@ -8,25 +8,26 @@ module.exports = {
       },
       colors: {
         ink: {
-          950: '#060F19',
-          900: '#0B1B2B',
-          800: '#122B41',
-          700: '#1B3A55',
-          600: '#2A4E6E',
-          500: '#456B8C',
-          400: '#7C97B0',
-          300: '#B3C4D3',
-          200: '#DCE4EC',
-          100: '#EEF2F6',
-          50:  '#F7F9FB'
+          950: '#000000',
+          900: '#212529',
+          800: '#2B2F33',
+          700: '#43474D',
+          600: '#5C6066',
+          500: '#808080',
+          400: '#8C8E91',
+          300: '#B5B7BA',
+          200: '#DEE2E6',
+          100: '#F1F1F1',
+          50:  '#F7F7F7'
         },
         accent: {
-          DEFAULT: '#0d9488',
-          600: '#0f766e',
-          700: '#115e59',
-          300: '#5eead4',
-          100: '#ccfbf1'
-        }
+          DEFAULT: '#212529',
+          600: '#000000',
+          700: '#000000',
+          300: '#B5B7BA',
+          100: '#F1F1F1'
+        },
+        graphite: '#43474D'
       },
       maxWidth: { '8xl': '88rem' },
       keyframes: {
@@ -37,7 +38,8 @@ module.exports = {
         marquee: {
           '0%':   { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(-50%)' }
-        }
+        },
+        graphite: '#43474D'
       },
       animation: {
         fadeUp: 'fadeUp .7s cubic-bezier(.16,1,.3,1) forwards',

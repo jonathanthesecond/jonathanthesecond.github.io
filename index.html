@@ -52,7 +52,7 @@
 <!-- Schriften, Basis-Styles, Animationen (gemeinsam mit den Unterseiten) -->
 <link rel="stylesheet" href="site.css">
 <link rel="preload" href="fonts/SizmoPro.otf" as="font" type="font/otf" crossorigin>
-<link rel="preload" href="AgileElevation_EOS7541-1920.jpg" as="image" imagesrcset="AgileElevation_EOS7541-1280.jpg 1280w, AgileElevation_EOS7541-1920.jpg 1920w, AgileElevation_EOS7541.jpg 2560w" imagesizes="100vw" fetchpriority="high">
+<link rel="preload" href="AgileElevation_EOS7494-1200.jpg" as="image" imagesrcset="AgileElevation_EOS7494-800.jpg 800w, AgileElevation_EOS7494-1200.jpg 1200w, AgileElevation_EOS7494.jpg 2560w" imagesizes="100vw" fetchpriority="high">
 
 <!-- Strukturierte Daten für Suchmaschinen (schema.org)
      "address" = Anschrift laut Impressum (Cadolzburg); die drei Standorte stehen unter "location". -->
@@ -252,11 +252,13 @@
 
   <!-- Hintergrundbild Startseite – wie auf der bisherigen Website hell überlagert -->
   <div class="absolute inset-0" aria-hidden="true">
-    <img src="AgileElevation_EOS7541-1920.jpg"
-         srcset="AgileElevation_EOS7541-1280.jpg 1280w, AgileElevation_EOS7541-1920.jpg 1920w, AgileElevation_EOS7541.jpg 2560w"
+    <img src="AgileElevation_EOS7494-1200.jpg"
+         srcset="AgileElevation_EOS7494-800.jpg 800w, AgileElevation_EOS7494-1200.jpg 1200w, AgileElevation_EOS7494.jpg 2560w"
          sizes="100vw" alt="" width="2560" height="1707"
          class="h-full w-full object-cover" loading="eager" decoding="async" fetchpriority="high">
-    <div class="absolute inset-0 bg-white/80"></div>
+    <!-- Leichter Schleier fürs ganze Bild, etwas dichter in der Mitte hinter dem Text -->
+    <div class="absolute inset-0 bg-white/15"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_70%_75%_at_50%_55%,rgba(255,255,255,0.72)_0%,rgba(255,255,255,0.45)_50%,rgba(255,255,255,0)_100%)]"></div>
   </div>
 
   <div class="relative mx-auto max-w-5xl px-5 text-center sm:px-8 lg:px-12">
@@ -270,7 +272,7 @@
       die drei Senior-Partner, die Sie hier sehen – mit über 25 Jahren gebündelter Erfahrung
       in IT, Führung und agiler Organisationsentwicklung.
     </p>
-    <p class="reveal mx-auto mt-4 max-w-3xl text-lg leading-relaxed text-ink-600">
+    <p class="reveal mx-auto mt-4 max-w-3xl text-lg leading-relaxed text-ink-800">
       Wir stellen Ihnen die passenden Räder, mit denen Sie sicher durchs Gelände fahren –
       individuell zugeschnitten auf Ihre Organisation und Ihre Ziele.
     </p>
@@ -289,21 +291,21 @@
     </div>
 
     <!-- Kennzahlen (dt steht im Code vor dd, wird per flex-col-reverse aber darunter angezeigt) -->
-    <dl class="reveal mx-auto mt-14 grid max-w-3xl grid-cols-2 gap-x-6 gap-y-8 border-t border-ink-900/20 pt-8 sm:grid-cols-4">
+    <dl class="reveal mx-auto mt-14 grid max-w-3xl grid-cols-2 gap-x-6 gap-y-8 border-t border-ink-900/30 pt-8 sm:grid-cols-4">
       <div class="flex flex-col-reverse">
-        <dt class="mt-1 text-xs uppercase tracking-wider text-ink-600">gegründet</dt>
+        <dt class="mt-1 text-xs font-medium uppercase tracking-wider text-ink-900">gegründet</dt>
         <dd class="text-4xl font-normal text-ink-900">2015</dd>
       </div>
       <div class="flex flex-col-reverse">
-        <dt class="mt-1 text-xs uppercase tracking-wider text-ink-600">Senior-Partner</dt>
+        <dt class="mt-1 text-xs font-medium uppercase tracking-wider text-ink-900">Senior-Partner</dt>
         <dd class="text-4xl font-normal text-ink-900">3</dd>
       </div>
       <div class="flex flex-col-reverse">
-        <dt class="mt-1 text-xs uppercase tracking-wider text-ink-600">Jahre Erfahrung</dt>
+        <dt class="mt-1 text-xs font-medium uppercase tracking-wider text-ink-900">Jahre Erfahrung</dt>
         <dd class="text-4xl font-normal text-ink-900">25+</dd>
       </div>
       <div class="flex flex-col-reverse">
-        <dt class="mt-1 text-xs uppercase tracking-wider text-ink-600">Senior-Expertise</dt>
+        <dt class="mt-1 text-xs font-medium uppercase tracking-wider text-ink-900">Senior-Expertise</dt>
         <dd class="text-4xl font-normal text-ink-900">100&nbsp;%</dd>
       </div>
     </dl>
